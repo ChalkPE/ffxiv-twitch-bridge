@@ -50,8 +50,9 @@ twitch.on('message', (channel, tags, message, self) => {
   if (self) return
   if (tags['message-type'] !== 'chat') return
 
-  const name = tags['display-name']
-  if (!/[가-힣]/.test(name)) name = capitalCase(name)
+  const name = /[가-힣]/.test(tags['display-name'])
+    ? name
+    : capitalCase(tags['display-name'])
 
   syrcus.send(JSON.stringify({
     payloads: [
