@@ -1,0 +1,20 @@
+{
+  "name": "ffxiv-twitch-bridge",
+  "version": "1.0.0",
+  "description": "Chat bridge between Twitch IRC and FFXIV Linkshell",
+  "main": "src/main.js",
+  "repository": "https://github.com/ChalkPE/ffxiv-twitch-bridge",
+  "author": "ChalkPE",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "change-case": "^4.1.2",
+    "dotenv": "^8.2.0",
+    "reconnecting-websocket": "^4.4.0",
+    "tmi.js": "^1.7.1",
+    "ws": "^7.4.2"
+  },
+  "scripts": {
+    "start": "node ."
+  }
+}
