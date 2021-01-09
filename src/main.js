@@ -28,9 +28,9 @@ syrcus.addEventListener('error', panic('Syrcus'))
 syrcus.addEventListener('open', () => console.log('Syrcus connected'))
 
 const twitch = new Client({
-	connection: { secure: true, reconnect: true },
-	identity: { username: USERNAME, password: TOKEN },
-	channels: [CHANNEL]
+  connection: { secure: true, reconnect: true },
+  identity: { username: USERNAME, password: TOKEN },
+  channels: [CHANNEL]
 })
 
 twitch.connect()
